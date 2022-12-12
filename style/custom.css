@@ -1,7 +1,7 @@
 
 section {
     padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 input, textarea {
@@ -19,20 +19,38 @@ input, textarea {
 
 .navbar-toggler:focus {    
 	font-size: 23px;
-	cursor: pointer;
-	display: none;
+	cursor: pointer;	
 	border-radius: 5px;
 	border-spacing: 2px 2px;
+    text-decoration: none;
+    color: rgba(228, 231, 233, 0.5);
 }
 
 .navbar .navbar-nav .nav-link {
-    color: rgb(187, 186, 186);
+    color: #bbbaba;
     font-size: 1.1em;
 }
+
 .navbar .navbar-nav .nav-link:hover {
   background-color: #cecece;
   color: #fff;
   border-radius: 15px;
+}
+.botaoct{
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+}
+
+/* css js */
+.mensagem{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+form .erro input {
+    border: #ff0000 solid 3px;
 }
 
 @media (max-width: 992px) {
@@ -44,18 +62,27 @@ input, textarea {
       .card {
         width: 50%;
         margin-left: 10%;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px;        
     }   
+    .botaoct{
+        padding: 0.4rem 0.8rem;
+        font-size: 1.10rem;
+        border-radius: 0.3rem;
+    }
 }
 
 @media (max-width: 768px) {
+    #col712{
+        width: 98%;
+
+    }
     #img-1{
-        display: flex;
-        justify-content:center;
+        display: block;
+        text-align: center;
     }
     .img1{
-        width: 85%;       
+        width: 85%;
+        height: auto;
     }
     .card {
         width: 80%;
@@ -71,4 +98,18 @@ input, textarea {
         
     }
 
+    .botaoct{
+        padding: 0.25rem 0.5rem;
+        font-size: 1.00rem;
+        border-radius: 0.3rem;
+    }
+    /* css js */
+    .mensagem{
+        font-size: 1.0rem;
+        text-align: center;
+        padding: 0.8rem;
+    }
+
 }
+
+

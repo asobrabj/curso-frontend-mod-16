@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootstrap513/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap513/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/custom.css">
     <title>T-Shirts</title>
 </head>
@@ -14,8 +14,8 @@
 
     <header>
         <div class="container">
-            <div class="row">
 
+            <div class="row">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <img src="./images/logo.JPG" alt="moda branca">
@@ -46,8 +46,7 @@
                         </div>
                     </div>
                 </nav>
-
-            </div>
+            </div>  <!-- fim div row -->
 
         </div>
     </header>
@@ -55,7 +54,7 @@
     <section id="home">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-7 col-sm-12" id="col712">
                     <h2>T-Shirts Coração</h2>
                     <p>Malha de ótima qualidade proporcionando leveza, maciez e suavidade nos movimentos. <br><br>
                         Têm ótimo caimento e acabamento, tecido leve não retém o suor do corpo, transporta a 
@@ -130,21 +129,22 @@
                     <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <form class="form">
+                    <div class="mensagem"></div>
+                    <form class="form erro" id="form-1">
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            <input class="form-control obrigatorio" type="text" name="nome" required placeholder="digite seu nome">
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            <input class="form-control obrigatorio email" type="text" name="email" required placeholder="digite seu email">
                         </div>
 
                         <div class="input-group">
                             <textarea class="form-control" name="" rows="5"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                        <button type="submit" class="btn btn-success botaoct">Solicitar Cotação</button>
 
                     </form>
 
@@ -277,6 +277,7 @@
 
     </div>
 
+    <script type="text/javascript" src="./js/script.js"></script>
     <script src="./bootstrap513/js/bootstrap.bundle.min.js"></script>
 </body>
 
